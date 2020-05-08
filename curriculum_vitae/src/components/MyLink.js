@@ -1,9 +1,29 @@
 import React, { Component } from "react";
-import { Box, Grid, Button } from "@material-ui/core";
+import { Grid, Button } from "@material-ui/core";
 import { withStyles } from "@material-ui/core";
 import classnames from "classnames";
+import Scrollspy from "react-scrollspy";
 const style = (theme) => ({
-  root: {},
+  root: {
+    "& a": {
+      textDecoration: "none",
+      color: "rgba(238, 238, 238, 0.55);",
+    },
+    "& li": {
+      listStyle: "none",
+    },
+    // "& a:hover": {
+    //   color: "#fff",
+    // },
+    "& a:focus": {
+      color: "#fff",
+    },
+  },
+  active: {
+    "& a": {
+      color: "#fff",
+    },
+  },
   my_link_pure_css: {
     with: "100%",
     height: "100%",
@@ -28,7 +48,8 @@ const style = (theme) => ({
   },
   link_item_content: {
     textAlign: "center",
-    padding: 10,
+    marginBottom: 5,
+    fontSize: 20,
   },
 });
 
@@ -40,6 +61,9 @@ const CustomButton = withStyles((theme) => ({
 }))(Button);
 
 class MyLink extends Component {
+  state = {
+    isActive: false,
+  };
   render() {
     const { classes } = this.props;
     return (
@@ -52,24 +76,46 @@ class MyLink extends Component {
           xs={12}
           className={classnames(classes.link_avatar, classes.d_flex_center)}
         >
-          avata
+          avatar
         </Grid>
         <Grid item xs={12} className={classnames(classes.link_item)}>
-          <Grid item xs={12} className={classes.link_item_content}>
-            <button>về tôi</button>
-          </Grid>
-          <Grid item xs={12} className={classes.link_item_content}>
-            Kinh nghiệm
-          </Grid>
-          <Grid item xs={12} className={classes.link_item_content}>
-            Học vấn
-          </Grid>
-          <Grid item xs={12} className={classes.link_item_content}>
-            Kỹ thuật
-          </Grid>
-          <Grid item xs={12} className={classes.link_item_content}>
-            Sở thích
-          </Grid>
+          <Scrollspy
+            items={["about", "experience", "education", "skills", "interests"]}
+            currentClassName={classes.active}
+          >
+            <Grid item xs={12} className={classes.link_item_content}>
+              <li>
+                <a
+                  href="#about"
+                  className={classnames({
+                    [classes.active]: this.state.isActive,
+                  })}
+                >
+                  Về tôi
+                </a>
+              </li>
+            </Grid>
+            <Grid item xs={12} className={classes.link_item_content}>
+              <li>
+                <a href="#experience">Kinh nghiệm</a>
+              </li>
+            </Grid>
+            <Grid item xs={12} className={classes.link_item_content}>
+              <li>
+                <a href="#education">Học vấn</a>
+              </li>
+            </Grid>
+            <Grid item xs={12} className={classes.link_item_content}>
+              <li>
+                <a href="#skills">Kỹ thuật</a>
+              </li>
+            </Grid>
+            <Grid item xs={12} className={classes.link_item_content}>
+              <li>
+                <a href="#interests"> Sở thích</a>
+              </li>
+            </Grid>
+          </Scrollspy>
         </Grid>
       </Grid>
     );

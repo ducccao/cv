@@ -7,13 +7,13 @@ import classnames from "classnames";
 const style = (theme) => ({
   root: {},
   my_link_pure_css: {
-    backgroundColor: "lightblue",
+    backgroundColor: "rgb(50, 143, 231);",
     height: "100vh",
     position: "sticky",
     top: 0,
   },
   my_infor_pure_css: {
-    backgroundColor: "lightcoral",
+    backgroundColor: "#d1dddb",
     minHeight: "200vh",
   },
 });

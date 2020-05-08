@@ -15,5 +15,9 @@ img {
 }
 
 .color {
-  color: lightcoral;
+  color: #d1dddb;
+}
+
+svg path {
+  fill: #dbdbdb;
 }
