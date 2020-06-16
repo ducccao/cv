@@ -1,16 +1,37 @@
 import React from "react";
 import "./Global.css";
 import CV from "./components/CV";
-import { withStyles } from "@material-ui/core";
-const style = (theme) => ({
-  root: {},
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles({
+  root: {
+    "& a": {
+      textDecoration: "none",
+    },
+    "& a:hover": {
+      color: "black",
+    },
+    "& a:visited": {
+      color: "black",
+    },
+
+    "& h3": {
+      height: 30,
+
+      position: "relative",
+      transition: "0.5s",
+      transformOrigin: "bottom left",
+    },
+  },
 });
-function App() {
+
+function App(props) {
+  const classes = useStyles(props);
   return (
-    <div className="App">
+    <div className={classes.root}>
       <CV></CV>
     </div>
   );
 }
 
-export default withStyles(style)(App);
+export default App;
