@@ -8,7 +8,7 @@ const style = (theme) => ({
 function App() {
   return (
     <div className="App">
-      <CV />
+      <CV></CV>
     </div>
   );
 }
