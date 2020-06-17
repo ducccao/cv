@@ -43,6 +43,10 @@ github_router.get("/myself/achievement", (req, res) => {
   const data = {
     id: Math.floor(Math.random() * 10),
     hackerrank: "/image/hackerrank.png",
+    kmin: {
+      fe: "Frontend",
+      be: "Nodejs",
+    },
   };
   res.send(data);
 });

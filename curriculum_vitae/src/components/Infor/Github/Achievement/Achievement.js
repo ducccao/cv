@@ -32,6 +32,15 @@ class Achievement extends Component {
         <Grid item xs={12}>
           <h3>Thành tích khác</h3>
         </Grid>
+
+        <Grid item xs={12}>
+          <h4 className={classes.achievement_item}>Kmin academy</h4>
+          <p className={classes.achievement_item}>
+            Tốt nghiệp khóa Frontend - 14
+          </p>
+          <p className={classes.achievement_item}>Tốt nghiệp khóa Nodejs - 1</p>
+        </Grid>
+
         <Grid item xs={12}>
           <h4 className={classes.achievement_item}>Hackerrank</h4>
         </Grid>

@@ -40,7 +40,6 @@ const styles = (theme) => ({
 // const PRO_URL = "https://caovanducs.herokuapp.com/image/avatar.jpg";
 const DEV_URL = "https://caovanducs.herokuapp.com";
 
-
 let log = console.log;
 class Github extends Component {
   state = {

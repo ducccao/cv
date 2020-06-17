@@ -26,6 +26,7 @@ const useStyles = makeStyles({
       position: "relative",
       transition: "0.5s",
       transformOrigin: "bottom left",
+      marginBottom: 10,
     },
   },
 });

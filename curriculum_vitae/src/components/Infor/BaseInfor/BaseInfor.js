@@ -25,7 +25,7 @@ const styles = (theme) => ({
     position: "absolute",
     right: 0,
     top: "10%",
-    height: "150%",
+    height: "100%",
     width: 2,
     backgroundColor: "black",
     [theme.breakpoints.between(0, 960)]: {
@@ -41,7 +41,6 @@ const styles = (theme) => ({
 // const DEV_URL = "http://localhost:5000";
 // const PRO_URL = "https://caovanducs.herokuapp.com/image/avatar.jpg";
 const DEV_URL = "https://caovanducs.herokuapp.com";
-
 
 let log = console.log;
 class BaseInfor extends Component {

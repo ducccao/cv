@@ -28,7 +28,13 @@ class GithubLinker extends Component {
         <div className={classes.special_css}>
           <h3>Github </h3>
         </div>
-        <a className={classes.github_item} href="https://github.com/AintDuc">
+
+        <a
+          className={classes.github_item}
+          rel="noopener noreferrer"
+          href="https://github.com/AintDuc"
+          target="_blank"
+        >
           {github_link}
         </a>
       </div>
