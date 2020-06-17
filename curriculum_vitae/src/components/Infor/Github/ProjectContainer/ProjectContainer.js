@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Grid, withStyles } from "@material-ui/core";
-import ProjectItem from "./ProjectItem/ProjectItem";
-import Axios from "axios";
+import { withStyles } from "@material-ui/core";
+
 const styles = () => ({
   root: {},
   project_item: {
@@ -18,52 +17,26 @@ const styles = () => ({
     flexDirection: "column",
   },
   special_css: {
-    overflow: "hidden",
+    marginBottom: 20,
   },
 });
 
 // const PRO_URL = "http://localhost:5000/image/avatar.jpg";
-const DEV_URL = "http://localhost:5000";
-let log = console.log;
+// const DEV_URL = "http://localhost:5000";
+// let log = console.log;
 class ProjectContainer extends Component {
-  state = {
-    project: [],
-  };
+  state = {};
 
-  componentDidMount = () => {
-    // get data project
-    Axios.get(`${DEV_URL}/myself/projects`)
-      .then((data) => {
-        const new_data = [data.data];
-        log(new_data);
-        this.setState({
-          project: new_data[0],
-        });
-      })
-      .catch((er) => {
-        log(er);
-      });
-  };
+  componentDidMount = () => {};
   render() {
     const { classes } = this.props;
-    const { project } = this.state;
-    const ProjectItemElement = project.map((pj, index) => {
-      return (
-        <ProjectItem
-          key={index}
-          project_name={pj.project_name}
-          heroku_link={pj.heroku_link}
-          youtobe_link={pj.youtobe_link}
-          github_link={pj.github_link}
-        />
-      );
-    });
+
     return (
       <div>
         <div className={classes.special_css}>
           <h3>Một số project về lập trình web</h3>
         </div>
-        {ProjectItemElement}
+        {this.props.children}
       </div>
     );
   }

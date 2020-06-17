@@ -23,8 +23,9 @@ const styles = (theme) => ({
   },
 });
 
-// const PRO_URL = "http://localhost:5000/image/avatar.jpg";
-const DEV_URL = "http://localhost:5000";
+// const DEV_URL = "http://localhost:5000";
+// const PRO_URL = "https://caovanducs.herokuapp.com/image/avatar.jpg";
+const DEV_URL = "https://caovanducs.herokuapp.com";
 
 class Avatar extends Component {
   render() {
@@ -32,7 +33,7 @@ class Avatar extends Component {
     return (
       <Grid container className={classes.root}>
         <Grid item xs={12} md={8} lg={6} className={classes.avatar_css}>
-          <img src={`${DEV_URL}/image/avatar.jpg`} />
+          <img alt="avatar" src={`${DEV_URL}/image/avatar.jpg`} />
         </Grid>
       </Grid>
     );

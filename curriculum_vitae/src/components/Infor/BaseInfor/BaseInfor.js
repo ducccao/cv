@@ -7,6 +7,7 @@ import Wanted from "./Wanted/Wanted";
 
 const styles = (theme) => ({
   root: {
+    position: "relative",
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "flex-start",
@@ -20,9 +21,28 @@ const styles = (theme) => ({
   base_infor_item: {
     padding: "0 20px",
   },
+  sea_level: {
+    position: "absolute",
+    right: 0,
+    top: "10%",
+    height: "150%",
+    width: 2,
+    backgroundColor: "black",
+    [theme.breakpoints.between(0, 960)]: {
+      top: "unset",
+      right: "unset",
+      bottom: 0,
+      left: 20,
+      height: 3,
+      width: "70%",
+    },
+  },
 });
-// const PRO_URL = "http://localhost:5000/image/avatar.jpg";
-const DEV_URL = "http://localhost:5000";
+// const DEV_URL = "http://localhost:5000";
+// const PRO_URL = "https://caovanducs.herokuapp.com/image/avatar.jpg";
+const DEV_URL = "https://caovanducs.herokuapp.com";
+
+
 let log = console.log;
 class BaseInfor extends Component {
   state = {
@@ -46,7 +66,7 @@ class BaseInfor extends Component {
   */
 
   componentDidMount = () => {
-    const { base_infor, hard_skills, wanted } = this.state;
+    const { hard_skills, wanted } = this.state;
 
     // get basic infor
     Axios.get(`${DEV_URL}/user/myself/base_infor`)
@@ -115,7 +135,7 @@ class BaseInfor extends Component {
     });
 
     return (
-      <Grid container className={classes.root}>
+      <Grid id="basic_infor" container className={classes.root}>
         <Grid item xs={12} className={classes.base_infor_content}>
           {BasicInforElement}
         </Grid>
@@ -125,6 +145,7 @@ class BaseInfor extends Component {
         <Grid item xs={12} className={classes.base_infor_content}>
           {WantedElement}
         </Grid>
+        <div className={classes.sea_level}></div>
       </Grid>
     );
   }

@@ -6,10 +6,10 @@ const styles = () => ({
     "& :last-child": {
       marginBottom: 0,
     },
-    marginBottom: "10px",
+    marginBottom: "20px",
   },
   project_item: {
-    border: "1px solid black",
+    border: "0px solid black",
     minHeight: "50px",
   },
   project_name: {
@@ -24,7 +24,7 @@ const styles = () => ({
 });
 
 // const PRO_URL = "http://localhost:5000/image/avatar.jpg";
-const DEV_URL = "http://localhost:5000";
+// const DEV_URL = "http://localhost:5000";
 
 class ProjectItem extends Component {
   render() {
@@ -39,17 +39,17 @@ class ProjectItem extends Component {
     return (
       <div className={classes.root}>
         <Grid container className={classes.project_item}>
-          <Grid item xs={6} md={4} className={classes.project_name}>
+          <Grid item xs={4} md={4} className={classes.project_name}>
             <h4> {project_name}</h4>
           </Grid>
-          <Grid item xs={6} md={8} className={classes.item_link}>
-            <a target="_blank" href={github_link}>
+          <Grid item xs={8} md={8} className={classes.item_link}>
+            <a rel="noopener noreferrer" target="_blank" href={github_link}>
               Github: {github_link}
             </a>
-            <a target="_blank" href={heroku_link}>
-              Heroku: {heroku_link}{" "}
+            <a rel="noopener noreferrer" target="_blank" href={heroku_link}>
+              Heroku: {heroku_link}
             </a>
-            <a target="_blank" href={youtobe_link}>
+            <a rel="noopener noreferrer" target="_blank" href={youtobe_link}>
               Youtobe: {youtobe_link}
             </a>
           </Grid>

@@ -16,26 +16,23 @@ github_router.get("/myself/projects", (req, res) => {
     {
       id: Math.floor(Math.random() * 10),
       project_name: "Deplace Maison",
-      github_link: "https://github.com/AintDuc/Project-3-Deplacemaison",
-      heroku_link: "https://frontend-journey.herokuapp.com/",
-      youtobe_link:
-        "https://www.youtube.com/watch?v=poX8tXcVCFA&feature=youtu.be",
+      github_link: "https://bom.to/1l0Y6g",
+      heroku_link: "https://bom.to/ljy1Xe",
+      youtobe_link: "https://youtu.be/poX8tXcVCFA",
     },
     {
       id: Math.floor(Math.random() * 10),
       project_name: "Page Cinema",
-      github_link: "https://github.com/AintDuc/Project_2_PageCinema",
-      heroku_link: "https://backend-journey.herokuapp.com/",
-      youtobe_link:
-        "https://www.youtube.com/watch?v=ANlC8YWdlKk&feature=youtu.be",
+      github_link: "https://bom.to/3q6XFu",
+      heroku_link: "https://bom.to/CDotTe",
+      youtobe_link: "https://youtu.be/ANlC8YWdlKk",
     },
     {
       id: Math.floor(Math.random() * 10),
       project_name: "Blue sky",
-      github_link: "https://github.com/AintDuc/bluessky",
-      heroku_link: "http://bluessky.herokuapp.com/",
-      youtobe_link:
-        "https://www.youtube.com/playlist?list=PL0-FzENhrcBSP88eGRNwnrsWCHbVr6P-V",
+      github_link: "https://bom.to/8nKGLB",
+      heroku_link: "https://bom.to/tp7Pss",
+      youtobe_link: "https://bom.to/N2Hno7",
     },
   ];
   res.send(data);

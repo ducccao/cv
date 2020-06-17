@@ -5,26 +5,42 @@ import { ReactComponent as InstagramIcon } from "./../../../assets/svg/ins.svg";
 
 const styles = () => ({
   root: {
-    display: "flex",
-    justifyContent: "space-evenly",
-    alignItems: "flex-start",
-    height: "100%",
-    backgroundColor: "white",
+    minHeight: "100%",
     border: "0px solid black",
-    padding: "20px 0",
+    padding: 20,
+
     "& svg": {
-      height: 50,
-      width: 50,
+      height: 25,
+      width: 25,
     },
+    "& span": {
+      fontWeight: "bold",
+    },
+  },
+  social_icon: {
+    padding: "0 20px",
   },
 });
 class Social extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <Grid container className={classes.root}>
-        {/* <FacebookIcon />
-        <InstagramIcon /> */}
+      <Grid id="social" container className={classes.root}>
+        <Grid item xs={12}>
+          <h3>Liên hệ</h3>
+        </Grid>
+        <Grid item xs={1} md={2} className={classes.social_icon}>
+          <FacebookIcon />
+        </Grid>
+        <Grid item xs={1} md={2} className={classes.social_icon}>
+          <InstagramIcon />
+        </Grid>
+        <Grid item xs={12} md={12}>
+          <span>Điện thoại:</span> (+84) 901 435 802
+        </Grid>
+        <Grid item xs={12} md={12}>
+          <span> Email:</span> caovanducs@gmail.com
+        </Grid>
       </Grid>
     );
   }

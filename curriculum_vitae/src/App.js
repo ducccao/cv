@@ -6,12 +6,17 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles({
   root: {
     "& a": {
+      width: "fit-content",
+      color: "black",
       textDecoration: "none",
     },
     "& a:hover": {
       color: "black",
     },
-    "& a:visited": {
+    "& a:visited ": {
+      color: "black",
+    },
+    "& a:active": {
       color: "black",
     },
 
