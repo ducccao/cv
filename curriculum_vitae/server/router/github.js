@@ -5,7 +5,7 @@ const github_router = new express.Router();
 github_router.get("/myself/github", (req, res) => {
   const data = {
     id: Math.floor(Math.random() * 10),
-    github_link: "https://github.com/AintDuc",
+    github_link: "https://github.com/ducccao",
   };
   res.send(data);
 });
@@ -16,21 +16,21 @@ github_router.get("/myself/projects", (req, res) => {
     {
       id: Math.floor(Math.random() * 10),
       project_name: "Deplace Maison",
-      github_link: "https://bom.to/1l0Y6g",
+      github_link: "https://bom.to/9CiWfc",
       heroku_link: "https://bom.to/ljy1Xe",
       youtobe_link: "https://youtu.be/poX8tXcVCFA",
     },
     {
       id: Math.floor(Math.random() * 10),
       project_name: "Page Cinema",
-      github_link: "https://bom.to/3q6XFu",
+      github_link: "https://bom.to/PA2kbS",
       heroku_link: "https://bom.to/CDotTe",
       youtobe_link: "https://youtu.be/ANlC8YWdlKk",
     },
     {
       id: Math.floor(Math.random() * 10),
       project_name: "Blue sky",
-      github_link: "https://bom.to/8nKGLB",
+      github_link: "https://bom.to/v7Zy8Z",
       heroku_link: "https://bom.to/tp7Pss",
       youtobe_link: "https://bom.to/N2Hno7",
     },

@@ -36,7 +36,7 @@ const styles = (theme) => ({
   },
 });
 
-// const DEV_URL = "http://localhost:5000";
+//const DEV_URL = "http://localhost:5000";
 // const PRO_URL = "https://caovanducs.herokuapp.com/image/avatar.jpg";
 const DEV_URL = "https://caovanducs.herokuapp.com";
 

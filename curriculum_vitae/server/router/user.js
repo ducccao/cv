@@ -5,7 +5,7 @@ user_router.get("/user/myself/base_infor", (req, res) => {
   const data = {
     id: Math.floor(Math.random() * 10),
     name: "Trịnh Cao Văn Đức",
-    school: "Sinh viên năm 3 - Khoa học tự nhiên",
+    school: "Sinh viên năm 3 - Đại học Khoa học tự nhiên",
     major: "Hệ thống thông tin",
     grades: "2.8/4.0",
   };
@@ -24,7 +24,7 @@ user_router.get("/user/myself/hard_skills", (req, res) => {
 user_router.get("/user/myself/wanted", (req, res) => {
   const data = {
     id: Math.floor(Math.random() * 10),
-    message: "Được thực tập vị trí full-stack javascript developer.",
+    message: "Được thực tập vị trí javascript developer.",
   };
   res.send(data);
 });
