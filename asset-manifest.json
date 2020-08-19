@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Curriculum-vitae/static/css/main.f9b94475.chunk.css",
+    "main.js": "/Curriculum-vitae/static/js/main.4c160039.chunk.js",
+    "main.js.map": "/Curriculum-vitae/static/js/main.4c160039.chunk.js.map",
+    "runtime-main.js": "/Curriculum-vitae/static/js/runtime-main.461fe699.js",
+    "runtime-main.js.map": "/Curriculum-vitae/static/js/runtime-main.461fe699.js.map",
+    "static/js/2.3150d39a.chunk.js": "/Curriculum-vitae/static/js/2.3150d39a.chunk.js",
+    "static/js/2.3150d39a.chunk.js.map": "/Curriculum-vitae/static/js/2.3150d39a.chunk.js.map",
+    "index.html": "/Curriculum-vitae/index.html",
+    "precache-manifest.927fd9020c4c1bcd358a91c589be253d.js": "/Curriculum-vitae/precache-manifest.927fd9020c4c1bcd358a91c589be253d.js",
+    "service-worker.js": "/Curriculum-vitae/service-worker.js",
+    "static/css/main.f9b94475.chunk.css.map": "/Curriculum-vitae/static/css/main.f9b94475.chunk.css.map",
+    "static/js/2.3150d39a.chunk.js.LICENSE.txt": "/Curriculum-vitae/static/js/2.3150d39a.chunk.js.LICENSE.txt",
+    "static/media/fb.06468580.svg": "/Curriculum-vitae/static/media/fb.06468580.svg",
+    "static/media/ins.3d96dbbe.svg": "/Curriculum-vitae/static/media/ins.3d96dbbe.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.461fe699.js",
+    "static/js/2.3150d39a.chunk.js",
+    "static/css/main.f9b94475.chunk.css",
+    "static/js/main.4c160039.chunk.js"
+  ]
+}
